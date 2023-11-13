@@ -1,0 +1,261 @@
+Token -> RESERVED_WORD
+lexeme -> program
+
+Token -> IDENTIFIER
+lexeme -> Factorial
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> var
+
+Token -> IDENTIFIER
+lexeme -> numero
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> function
+
+Token -> IDENTIFIER
+lexeme -> CalcularFactorial
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> if
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> <=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> then
+
+Token -> IDENTIFIER
+lexeme -> CalcularFactorial
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> else
+
+Token -> IDENTIFIER
+lexeme -> CalcularFactorial
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> *
+
+Token -> IDENTIFIER
+lexeme -> CalcularFactorial
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> -
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Ingrese un número para calcular su factorial:'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> readln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> numero
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> if
+
+Token -> IDENTIFIER
+lexeme -> numero
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> <
+
+Token -> INTEGER
+lexeme -> 0
+
+Token -> RESERVED_WORD
+lexeme -> then
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'El factorial no está definido para números negativos.'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> RESERVED_WORD
+lexeme -> else
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> CalcularFactorial
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> numero
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'El factorial de '
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> numero
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> ' es: '
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> .
+

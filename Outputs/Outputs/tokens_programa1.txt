@@ -1,0 +1,40 @@
+Token -> COMMENT
+lexeme -> {
+ Autor : Luis Del aguila
+ Version : 1.0
+ Descripcion del programa : Este programa muestra un mensaje por pantalla
+}
+
+Token -> RESERVED_WORD
+lexeme -> PROGRAM
+
+Token -> IDENTIFIER
+lexeme -> Saludo
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> BEGIN
+
+Token -> RESERVED_WORD
+lexeme -> write
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Hola otra vez'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> COMMENT
+lexeme -> (* Instruccion que muestra el mensaje por pantalla *)
+
+Token -> RESERVED_WORD
+lexeme -> END
+
+Token -> SPECIAL_CHARACTER
+lexeme -> .
+

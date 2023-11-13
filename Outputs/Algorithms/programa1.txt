@@ -1,0 +1,9 @@
+{
+ Autor : Luis Del aguila
+ Version : 1.0
+ Descripcion del programa : Este programa muestra un mensaje por pantalla
+}
+PROGRAM Saludo;
+BEGIN
+  write('Hola otra vez') (* Instruccion que muestra el mensaje por pantalla *)
+END.

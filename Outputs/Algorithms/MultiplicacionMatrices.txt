@@ -1,0 +1,59 @@
+program MultiplicacionMatrices;
+const
+  filasA = 2;
+  columnasA = 3;
+  filasB = 3;
+  columnasB = 2;
+var
+  matrizA: array[1..filasA, 1..columnasA] of integer;
+  matrizB: array[1..filasB, 1..columnasB] of integer;
+  resultado: array[1..filasA, 1..columnasB] of integer;
+  i, j, k: integer;
+
+procedure InicializarMatrices;
+begin
+  writeln('Ingrese los elementos de la matriz A (', filasA, 'x', columnasA, '):');
+  for i := 1 to filasA do
+    for j := 1 to columnasA do
+      readln(matrizA[i, j]);
+
+  writeln('Ingrese los elementos de la matriz B (', filasB, 'x', columnasB, '):');
+  for i := 1 to filasB do
+    for j := 1 to columnasB do
+      readln(matrizB[i, j]);
+end;
+
+procedure MultiplicarMatrices;
+begin
+  for i := 1 to filasA do
+    for j := 1 to columnasB do
+    begin
+      resultado[i, j] := 0;
+      for k := 1 to columnasA do
+        resultado[i, j] := resultado[i, j] + matrizA[i, k] * matrizB[k, j];
+    end;
+end;
+
+procedure MostrarMatriz(matriz: array of array of integer; filas, columnas: integer);
+begin
+  for i := 1 to filas do
+  begin
+    for j := 1 to columnas do
+      write(matriz[i, j]:4);
+    writeln;
+  end;
+end;
+
+begin
+  InicializarMatrices;
+  MultiplicarMatrices;
+
+  writeln('Matriz A:');
+  MostrarMatriz(matrizA, filasA, columnasA);
+
+  writeln('Matriz B:');
+  MostrarMatriz(matrizB, filasB, columnasB);
+
+  writeln('Resultado de la multiplicación:');
+  MostrarMatriz(resultado, filasA, columnasB);
+end.

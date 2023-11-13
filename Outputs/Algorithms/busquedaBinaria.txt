@@ -1,0 +1,49 @@
+program BusquedaBinaria;
+const
+  n = 10;
+var
+  arreglo: array[1..n] of integer;
+  target, low, high, middle: integer;
+  found: boolean;
+
+procedure InicializarArreglo;
+var
+  i: integer;
+begin
+  writeln('Ingrese ', n, ' números ordenados:');
+  for i := 1 to n do
+    readln(arreglo[i]);
+end;
+
+function BusquedaBinaria(target: integer): boolean;
+begin
+  low := 1;
+  high := n;
+  found := false;
+
+  while (low <= high) and (not found) do
+  begin
+    middle := (low + high) div 2;
+
+    if arreglo[middle] = target then
+      found := true
+    else if arreglo[middle] < target then
+      low := middle + 1
+    else
+      high := middle - 1;
+  end;
+
+  BusquedaBinaria := found;
+end;
+
+begin
+  InicializarArreglo;
+
+  writeln('Ingrese el número que desea buscar:');
+  readln(target);
+
+  if BusquedaBinaria(target) then
+    writeln('El número ', target, ' se encuentra en el arreglo.')
+  else
+    writeln('El número ', target, ' no se encuentra en el arreglo.');
+end.

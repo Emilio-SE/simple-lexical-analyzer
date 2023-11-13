@@ -1,0 +1,24 @@
+program Factorial;
+var
+  numero, resultado: integer;
+
+function CalcularFactorial(n: integer): integer;
+begin
+  if n <= 1 then
+    CalcularFactorial := 1
+  else
+    CalcularFactorial := n * CalcularFactorial(n - 1);
+end;
+
+begin
+  writeln('Ingrese un número para calcular su factorial:');
+  readln(numero);
+
+  if numero < 0 then
+    writeln('El factorial no está definido para números negativos.')
+  else
+  begin
+    resultado := CalcularFactorial(numero);
+    writeln('El factorial de ', numero, ' es: ', resultado);
+  end;
+end.

@@ -1,0 +1,966 @@
+Token -> RESERVED_WORD
+lexeme -> program
+
+Token -> IDENTIFIER
+lexeme -> MultiplicacionMatrices
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> const
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> =
+
+Token -> INTEGER
+lexeme -> 2
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> columnasA
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> =
+
+Token -> INTEGER
+lexeme -> 3
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> filasB
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> =
+
+Token -> INTEGER
+lexeme -> 3
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> =
+
+Token -> INTEGER
+lexeme -> 2
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> var
+
+Token -> IDENTIFIER
+lexeme -> matrizA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> array
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> columnasA
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> RESERVED_WORD
+lexeme -> of
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> matrizB
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> array
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> filasB
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> RESERVED_WORD
+lexeme -> of
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> array
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> RESERVED_WORD
+lexeme -> of
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> k
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> procedure
+
+Token -> IDENTIFIER
+lexeme -> InicializarMatrices
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Ingrese los elementos de la matriz A ('
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> 'x'
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> columnasA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> '):'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> columnasA
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> readln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> matrizA
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Ingrese los elementos de la matriz B ('
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> filasB
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> 'x'
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> '):'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> filasB
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> readln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> matrizB
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> procedure
+
+Token -> IDENTIFIER
+lexeme -> MultiplicarMatrices
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 0
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> k
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> columnasA
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> +
+
+Token -> IDENTIFIER
+lexeme -> matrizA
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> k
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> *
+
+Token -> IDENTIFIER
+lexeme -> matrizB
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> k
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> procedure
+
+Token -> IDENTIFIER
+lexeme -> MostrarMatriz
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> matriz
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> array
+
+Token -> RESERVED_WORD
+lexeme -> of
+
+Token -> RESERVED_WORD
+lexeme -> array
+
+Token -> RESERVED_WORD
+lexeme -> of
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> filas
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> columnas
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> filas
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> columnas
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> write
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> matriz
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> INTEGER
+lexeme -> 4
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> IDENTIFIER
+lexeme -> InicializarMatrices
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> MultiplicarMatrices
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Matriz A:'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> MostrarMatriz
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> matrizA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> columnasA
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Matriz B:'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> MostrarMatriz
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> matrizB
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> filasB
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Resultado de la multiplicación:'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> MostrarMatriz
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> resultado
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> filasA
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> columnasB
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> .
+

@@ -1,0 +1,23 @@
+program burbuja;
+uses crt;
+const
+	n = 5;
+var
+	i,j,temp:integer;
+	a:array[1..n] of integer;
+begin
+	for i := 1 to n do
+		readln(a[i]);
+	for j := (n - 1) downto 1 do
+		for i := 1 to j do
+			if (a[i])>(a[i+1]) then
+			begin
+				temp := a[i];
+				a[i] := a[i+1];
+				a[i+1] := temp;
+			end;
+	writeln ('El resultado es:');
+	for i := 1 to n do
+		writeln (a[i]);
+	readln;
+end.

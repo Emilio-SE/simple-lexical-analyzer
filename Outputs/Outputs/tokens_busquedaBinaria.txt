@@ -1,0 +1,582 @@
+Token -> RESERVED_WORD
+lexeme -> program
+
+Token -> IDENTIFIER
+lexeme -> BusquedaBinaria
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> const
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> =
+
+Token -> INTEGER
+lexeme -> 10
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> var
+
+Token -> IDENTIFIER
+lexeme -> arreglo
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> array
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> RESERVED_WORD
+lexeme -> of
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> low
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> high
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> middle
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> found
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> boolean
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> procedure
+
+Token -> IDENTIFIER
+lexeme -> InicializarArreglo
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> var
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Ingrese '
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> ' números ordenados:'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> readln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> arreglo
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> function
+
+Token -> IDENTIFIER
+lexeme -> BusquedaBinaria
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> boolean
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> IDENTIFIER
+lexeme -> low
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> high
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> found
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> false
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> while
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> low
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> <=
+
+Token -> IDENTIFIER
+lexeme -> high
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> LOGICAL_OPERATOR
+lexeme -> and
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LOGICAL_OPERATOR
+lexeme -> not
+
+Token -> IDENTIFIER
+lexeme -> found
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> IDENTIFIER
+lexeme -> middle
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> low
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> +
+
+Token -> IDENTIFIER
+lexeme -> high
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> div
+
+Token -> INTEGER
+lexeme -> 2
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> if
+
+Token -> IDENTIFIER
+lexeme -> arreglo
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> middle
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> =
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> RESERVED_WORD
+lexeme -> then
+
+Token -> IDENTIFIER
+lexeme -> found
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> true
+
+Token -> RESERVED_WORD
+lexeme -> else
+
+Token -> RESERVED_WORD
+lexeme -> if
+
+Token -> IDENTIFIER
+lexeme -> arreglo
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> middle
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> <
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> RESERVED_WORD
+lexeme -> then
+
+Token -> IDENTIFIER
+lexeme -> low
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> middle
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> +
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> else
+
+Token -> IDENTIFIER
+lexeme -> high
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> middle
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> -
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> BusquedaBinaria
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> found
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> IDENTIFIER
+lexeme -> InicializarArreglo
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'Ingrese el número que desea buscar:'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> readln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> if
+
+Token -> IDENTIFIER
+lexeme -> BusquedaBinaria
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> RESERVED_WORD
+lexeme -> then
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'El número '
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> ' se encuentra en el arreglo.'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> RESERVED_WORD
+lexeme -> else
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'El número '
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> target
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> LITERAL_STRING
+lexeme -> ' no se encuentra en el arreglo.'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> .
+

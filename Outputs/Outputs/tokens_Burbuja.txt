@@ -1,0 +1,411 @@
+Token -> RESERVED_WORD
+lexeme -> program
+
+Token -> IDENTIFIER
+lexeme -> burbuja
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> uses
+
+Token -> IDENTIFIER
+lexeme -> crt
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> const
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> =
+
+Token -> INTEGER
+lexeme -> 5
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> var
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ,
+
+Token -> IDENTIFIER
+lexeme -> temp
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> SPECIAL_CHARACTER
+lexeme -> :
+
+Token -> RESERVED_WORD
+lexeme -> array
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ..
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> RESERVED_WORD
+lexeme -> of
+
+Token -> RESERVED_WORD
+lexeme -> integer
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> readln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> -
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> RESERVED_WORD
+lexeme -> downto
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> j
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> if
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> RELATIONAL_OPERATOR
+lexeme -> >
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> +
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> RESERVED_WORD
+lexeme -> then
+
+Token -> RESERVED_WORD
+lexeme -> begin
+
+Token -> IDENTIFIER
+lexeme -> temp
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> +
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ARITHMETIC_OPERATOR
+lexeme -> +
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> IDENTIFIER
+lexeme -> temp
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> LITERAL_STRING
+lexeme -> 'El resultado es:'
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> for
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> ASSIGNMENT_OPERATOR
+lexeme -> :=
+
+Token -> INTEGER
+lexeme -> 1
+
+Token -> RESERVED_WORD
+lexeme -> to
+
+Token -> IDENTIFIER
+lexeme -> n
+
+Token -> RESERVED_WORD
+lexeme -> do
+
+Token -> RESERVED_WORD
+lexeme -> writeln
+
+Token -> GROUPING_CHARACTER
+lexeme -> (
+
+Token -> IDENTIFIER
+lexeme -> a
+
+Token -> GROUPING_CHARACTER
+lexeme -> [
+
+Token -> IDENTIFIER
+lexeme -> i
+
+Token -> GROUPING_CHARACTER
+lexeme -> ]
+
+Token -> GROUPING_CHARACTER
+lexeme -> )
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> readln
+
+Token -> SPECIAL_CHARACTER
+lexeme -> ;
+
+Token -> RESERVED_WORD
+lexeme -> end
+
+Token -> SPECIAL_CHARACTER
+lexeme -> .
+
