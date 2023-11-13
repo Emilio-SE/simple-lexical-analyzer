@@ -1,4 +1,4 @@
-package org.lexicalAnalizer;
+package org.lexicalAnalyzer;
 
 /**
  * Author: Emilio Sánchez Enriquez
