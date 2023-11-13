@@ -20,7 +20,7 @@ public class TokenPair {
 
         @Override
         public String toString() {
-            return  "Token -> " + key + "; " +
-                    "lexeme -> " + value;
+            return  "Token -> " + key + "\n" +
+                    "lexeme -> " + value + "\n";
         }
 }

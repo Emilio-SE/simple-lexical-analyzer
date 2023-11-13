@@ -51,14 +51,14 @@ public class Main {
 
             PrintWriter writer = new PrintWriter(new FileWriter(desktopPath + "/tokens_" + fileName));
 
-            for (TokenPair parToken : tokens) {
-                output = parToken.getKey() + " -> " + parToken.getValue();
+            for (TokenPair pair : tokens) {
+                output = pair.toString();
                 writer.println(output);
             }
 
             writer.close();
 
-            System.out.println("Data saved: " + filePath);
+            System.out.println("Data saved: " + filePath + "\\tokens_" + fileName);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
